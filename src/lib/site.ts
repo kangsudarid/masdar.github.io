@@ -3,7 +3,7 @@ import { withLocalePath } from '@lib/i18n';
 
 const sharedSite = {
   name: 'Sudar Blogger',
-  domain: 'sudarblogger.com',
+  domain: 'masdarblog.pages.dev',
   url: 'https://www.sudarblogger.com',
   email: 'admin@sudarblogger.com',
   address: {
