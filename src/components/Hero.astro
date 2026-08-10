@@ -2,20 +2,20 @@
 import Container from '@components/Container.astro';
 import { Picture } from 'astro:assets';
 import { getLocaleFromPath, withLocalePath } from '@lib/i18n';
-import heroImage from '../assets/images/tedd-schreiner-hero.jpg';
+import heroImage from '../assets/images/sudar-schreiner-hero.jpg';
 
 const locale = getLocaleFromPath(Astro.url.pathname);
 const copy = locale === 'de'
   ? {
-      eyebrow: 'DevOps · AWS Cloud · Automation · AI-assisted Software Engineering',
-      title: 'DevOps Engineer für AWS Cloud, Automatisierung und AI-assisted Software Engineering.',
+      eyebrow: 'Traveller · Penulis · Blogger',
+      title: 'Menjadi Blogger Adalah Jalan Ninjaku.',
       intro:
-        'Ich entwickle und betreibe Cloud-Infrastruktur, CI/CD-Workflows und Automatisierungen, die Software-Deployments, ITSM-Prozesse und Netzwerkbetrieb verlässlicher machen.',
+        'Situs ini bercerita tentang pengalaman, esai, tutorial dan seputar dunia blogger dan IA.',
       summary:
-        'Erfahrung mit AWS, GitHub/GitLab Workflows, Kubernetes, Linux, Netzwerkautomatisierung und AI-gestützten Engineering-Prozessen.',
-      cv: 'CV ansehen',
-      contact: 'Kontakt aufnehmen',
-      projects: 'Case Studies',
+        'Blogger Devoloper, Template Blogger, Wordpress, SEO Exsperimen, Komunitas Blogger.',
+      cv: ' Lihat CV',
+      contact: 'Kontak Kami',
+      projects: 'Exsperimen',
       metrics: [
         ['Profil', 'DevOps · Cloud · Platform'],
         ['Stack', 'AWS · Kubernetes · CI/CD'],
@@ -26,9 +26,9 @@ const copy = locale === 'de'
       eyebrow: 'DevOps · AWS Cloud · Automation · AI-assisted Software Engineering',
       title: 'DevOps Engineer for AWS Cloud, Automation and AI-assisted Software Engineering.',
       intro:
-        'I design and operate cloud infrastructure, CI/CD workflows and automation that make software deployments, ITSM processes and network operations more reliable.',
+        'Saya adalah Blogger Kampung Yang mana ingin menceritakan Pengalaman di Dunia Blogger oleh karena itu membuat blog ini.',
       summary:
-        'Experience with AWS, GitHub/GitLab workflows, Kubernetes, Linux, network automation and AI-assisted engineering workflows.',
+        'Experien di Github, dan Blogger kemudian di Aplikasi kan di Cloudflare.',
       cv: 'View CV',
       contact: 'Get in touch',
       projects: 'Case Studies',
