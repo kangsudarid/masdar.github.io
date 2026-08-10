@@ -7,14 +7,14 @@ import { byPubDateDesc, visiblePosts } from '@lib/content';
 import { getCollection } from 'astro:content';
 
 const posts = (await getCollection('blog')).filter((post) => post.data.locale === 'de' && visiblePosts(post)).sort(byPubDateDesc);
-const categories = ['Tech', 'DevOps', 'Automation', 'AI Tools', 'Webprojekte', 'Personal Notes'];
+const categories = ['Pengalaman', 'Teknologi', 'Esai', 'AI Tools', 'Projek', 'Personal Notes'];
 ---
 
 <PageLayout
   eyebrow="Blog"
-  title="Notizen zu DevOps, Netzwerkdaten und technischen Projekten."
-  description="Praxisnahe Gedanken zu Automatisierung, Infrastruktur, Webprojekten, AI-Tools und technischen Entscheidungen."
-  tags={['DevOps', 'Automation', 'AI Tools', 'Webprojekte']}
+  title="Catatan Harian Kang Sudar."
+  description="Tempat Bercerita, Menulis Esai dan Pengalaman di dunia Blogger."
+  tags={['Travel', 'Pengalaman', 'AI Tools', 'Projek']}
 >
   <section class="section section-after-header">
     <Container>
