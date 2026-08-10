@@ -1,15 +1,15 @@
-export const locales = ['de', 'en'] as const;
+export const locales = ['id', 'en'] as const;
 export type Locale = (typeof locales)[number];
 
-export const defaultLocale: Locale = 'de';
+export const defaultLocale: Locale = 'id';
 export const localeStorageKey = 'ts_locale';
 
 export const localeMeta: Record<Locale, { lang: string; ogLocale: string; label: string; languageName: string }> = {
   de: {
-    lang: 'de',
-    ogLocale: 'de_DE',
+    lang: 'id',
+    ogLocale: 'id_ID',
     label: 'DE',
-    languageName: 'Deutsch',
+    languageName: 'Indonesia',
   },
   en: {
     lang: 'en',
@@ -36,7 +36,7 @@ export function stripLocaleFromPath(pathname: string) {
 export function withLocalePath(locale: Locale, pathname: string) {
   const normalizedPath = pathname === '' ? '/' : pathname;
 
-  if (locale === 'de') {
+  if (locale === 'id') {
     return normalizedPath;
   }
 
@@ -52,5 +52,5 @@ export function switchLocalePath(pathname: string, locale: Locale) {
 }
 
 export function alternateLocale(locale: Locale): Locale {
-  return locale === 'de' ? 'en' : 'de';
+  return locale === 'id' ? 'en' : 'id';
 }
