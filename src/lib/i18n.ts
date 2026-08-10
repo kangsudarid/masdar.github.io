@@ -5,6 +5,12 @@ export const defaultLocale: Locale = 'id';
 export const localeStorageKey = 'ts_locale';
 
 export const localeMeta: Record<Locale, { lang: string; ogLocale: string; label: string; languageName: string }> = {
+  de: {
+    lang: 'id',
+    ogLocale: 'id_ID',
+    label: 'ID',
+    languageName: 'Indonesia',
+  },
   id: {
     lang: 'id',
     ogLocale: 'id_ID',
