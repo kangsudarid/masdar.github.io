@@ -5,7 +5,7 @@ export const defaultLocale: Locale = 'id';
 export const localeStorageKey = 'ts_locale';
 
 export const localeMeta: Record<Locale, { lang: string; ogLocale: string; label: string; languageName: string }> = {
-  de: {
+  id: {
     lang: 'id',
     ogLocale: 'id_ID',
     label: 'ID',
@@ -24,7 +24,7 @@ export function isLocale(value: string): value is Locale {
 }
 
 export function getLocaleFromPath(pathname: string): Locale {
-  return pathname === '/en' || pathname.startsWith('/en/') ? 'en' : 'de';
+  return pathname === '/en' || pathname.startsWith('/en/') ? 'en' : 'id';
 }
 
 export function stripLocaleFromPath(pathname: string) {
