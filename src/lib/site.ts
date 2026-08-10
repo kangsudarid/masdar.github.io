@@ -20,7 +20,7 @@ const sharedSite = {
 } as const;
 
 const localizedSite = {
-  de: {
+  id: {
     title: 'Sudar Blogger | Personal Blog',
     description:
       'Tempat Share Pengalaman di Dunia Blogger dan  Share Tempat Menarik Lainnya',
@@ -35,15 +35,17 @@ const localizedSite = {
 } as const satisfies Record<Locale, { title: string; description: string; jobTitle: string }>;
 
 const navigationLabels = {
-  de: [
-    { key: 'projects', label: 'Projekte', path: '/projects/' },
-    { key: 'about', label: 'Über mich', path: '/about/' },
+  id: [
+    { key: 'projects', label: 'Unplug', path: '/projects/' },
+    { key: 'about', label: 'About', path: '/about/' },
+    { key: 'blog', label: 'Blog', path: '/blog/' },
     { key: 'cv', label: 'CV', path: '/cv/' },
-    { key: 'contact', label: 'Kontakt', path: '/contact/' },
+    { key: 'contact', label: 'Kontak', path: '/contact/' },
   ],
   en: [
     { key: 'projects', label: 'Projects', path: '/projects/' },
     { key: 'about', label: 'About', path: '/about/' },
+    { key: 'blog', label: 'Blogs', path: '/blog/' },
     { key: 'cv', label: 'CV', path: '/cv/' },
     { key: 'contact', label: 'Contact', path: '/contact/' },
   ],
