@@ -35,7 +35,7 @@ const localizedSite = {
 } as const satisfies Record<Locale, { title: string; description: string; jobTitle: string }>;
 
 const navigationLabels = {
-  id: [
+  de: [
     { key: 'projects', label: 'Unplug', path: '/projects/' },
     { key: 'about', label: 'About', path: '/about/' },
     { key: 'blog', label: 'Blog', path: '/blog/' },
