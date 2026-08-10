@@ -7,25 +7,25 @@ const locale = getLocaleFromPath(Astro.url.pathname);
 const privacyHref = withLocalePath(locale, '/datenschutz/');
 const copy = locale === 'de'
   ? {
-      eyebrow: 'Kontakt',
-      title: 'Kontakt für DevOps-, Cloud-, Automation- und AI-assisted Software Engineering-Rollen.',
+      eyebrow: 'Kontak',
+      title: 'Hubungi kontak dibawah ini apabila ingin kerjasama.',
       intro:
-        'Relevant sind Anfragen zu AWS Cloud, CI/CD, Kubernetes, Infrastrukturautomatisierung, Software Deployments, ITSM-Prozessen, Netzwerkautomatisierung und AI-gestütztem Software Engineering.',
-      name: 'Name',
+        'Topik yang relevan meliputi AWS Cloud, CI/CD, Kubernetes, otomatisasi infrastruktur, penyebaran perangkat lunak, alur kerja ITSM, otomatisasi jaringan, dan rekayasa perangkat lunak yang dibantu AI., ITSM-Prozessen.',
+      name: 'Nama',
       email: 'E-Mail',
-      organization: 'Organisation',
-      subject: 'Betreff',
-      message: 'Nachricht',
-      files: 'Dateien (optional)',
-      filesHint: 'Bis zu 10 Dateien: PDF, Word, Bilder oder ZIP, je max. 5 MB.',
+      organization: 'Organisasi',
+      subject: 'Judul',
+      message: 'Pesan',
+      files: 'Data (optional)',
+      filesHint: 'Hingga 10 file: PDF, Word, gambar, atau ZIP, masing-masing hingga 5 MB.',
       privacy:
-        'Ich bin einverstanden, dass meine Angaben und ggf. angehängte Dateien zur Bearbeitung der Anfrage per E-Mail verarbeitet werden.',
-      privacyLabel: 'Datenschutzerklärung',
-      send: 'Anfrage senden',
-      pending: 'Die Anfrage wird gesendet.',
-      success: 'Danke, die Anfrage wurde gesendet. Ich melde mich zeitnah zurück.',
-      error: 'Die Anfrage konnte nicht gesendet werden.',
-      attachmentCount: '{count} Datei(en) ausgewählt',
+        'Saya setuju bahwa detail saya dan file terlampir dapat diproses melalui email untuk keperluan penanganan permintaan saya.',
+      privacyLabel: 'Privacy Policy',
+      send: 'Kirim Pesan',
+      pending: 'Artikel pending.',
+      success: 'Terkirim, Secepatnya akan dibalas pesan anda.',
+      error: 'Pesan anda kirim sedang error.',
+      attachmentCount: '{count} Date (en) pilih',
     }
   : {
       eyebrow: 'Contact',
