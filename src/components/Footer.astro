@@ -7,26 +7,26 @@ import { getNavigation, getSite } from '@lib/site';
 const locale = getLocaleFromPath(Astro.url.pathname);
 const navigation = getNavigation(locale);
 const site = getSite(locale);
-const copy = locale === 'de'
+const copy = locale === 'id'
   ? {
       intro:
-        'DevOps Engineer mit Fokus auf AWS Cloud, CI/CD, Automatisierung, Netzwerkbetrieb und AI-assisted Software Engineering.',
+        'Situs ini berisi informasi tentang saya, tulisan, opini dan dokumentasi untuk saya pribadi ketika sedang belajar atau membagikan sesuatu. Untuk mendapatkan informasi yang sifatnya cepat.',
       nav: 'Navigation',
       legal: 'Kontakt & Legal',
       imprint: 'Impressum',
-      privacy: 'Datenschutz',
+      privacy: 'Privacy Police',
       footer:
-        'Statisch gebaut, mit zustimmungsbasierter Statistik und ohne externe Webfonts.',
+        'Web yang dibuat di Cloudflare and Github.',
     }
   : {
       intro:
-        'DevOps Engineer focused on AWS Cloud, CI/CD, automation, network operations and AI-assisted software engineering.',
+        'This site contains information about me, writings, opinions, and documentation for my personal use while I'm learning or sharing something. To obtain information quickly.',
       nav: 'Navigation',
       legal: 'Contact & Legal',
       imprint: 'Legal Notice',
       privacy: 'Privacy Policy',
       footer:
-        'Statically built, with consent-based analytics and without external webfonts.',
+        'Copyright All receved. Bluid Astro and Hosting Cloudflare',
     };
 ---
 
