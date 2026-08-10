@@ -11,12 +11,6 @@ export const localeMeta: Record<Locale, { lang: string; ogLocale: string; label:
     label: 'ID',
     languageName: 'Indonesia',
   },
-  id: {
-    lang: 'id',
-    ogLocale: 'id_ID',
-    label: 'ID',
-    languageName: 'Indonesia',
-  },
   en: {
     lang: 'en',
     ogLocale: 'en_US',
@@ -30,7 +24,7 @@ export function isLocale(value: string): value is Locale {
 }
 
 export function getLocaleFromPath(pathname: string): Locale {
-  return pathname === '/en' || pathname.startsWith('/en/') ? 'en' : 'id';
+  return pathname === '/en' || pathname.startsWith('/en/') ? 'en' : 'de';
 }
 
 export function stripLocaleFromPath(pathname: string) {
