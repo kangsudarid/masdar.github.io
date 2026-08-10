@@ -20,7 +20,7 @@ const sharedSite = {
 } as const;
 
 const localizedSite = {
-  id: {
+  de: {
     title: 'Sudar Blogger | Personal Blog',
     description:
       'Tempat Share Pengalaman di Dunia Blogger dan  Share Tempat Menarik Lainnya',
