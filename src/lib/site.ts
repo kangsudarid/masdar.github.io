@@ -2,15 +2,15 @@ import type { Locale } from '@lib/i18n';
 import { withLocalePath } from '@lib/i18n';
 
 const sharedSite = {
-  name: 'Tedd Schreiner',
-  domain: 'teddschreiner.de',
-  url: 'https://teddschreiner.de',
-  email: 'info@teddschreiner.de',
+  name: 'Sudar Blogger',
+  domain: 'sudarblogger',
+  url: 'https://www.sudarblogger.com',
+  email: 'admin@sudarblogger.com',
   address: {
-    street: 'Nordring 56',
-    postalCode: '59929',
-    city: 'Brilon',
-    country: 'Deutschland',
+    street: 'Ngimbang',
+    postalCode: '65523',
+    city: 'Lamongan',
+    country: 'Indonesia',
   },
   social: {
     github: 'https://github.com/tschreiner',
@@ -21,13 +21,13 @@ const sharedSite = {
 
 const localizedSite = {
   de: {
-    title: 'Tedd Schreiner | DevOps Engineer für AWS Cloud, Automation & AI-assisted Software Engineering',
+    title: 'Sudar Blogger | Personal Blog',
     description:
-      'Tedd Schreiner ist DevOps Engineer mit Fokus auf AWS Cloud, CI/CD, Kubernetes, Infrastrukturautomatisierung, Netzwerkautomatisierung, ITSM-Prozesse und AI-assisted Software Engineering.',
+      'Tempat Share Pengalaman di Dunia Blogger dan  Share Tempat Menarik Lainnya',
     jobTitle: 'DevOps Engineer für AWS Cloud, Automation und AI-assisted Software Engineering',
   },
   en: {
-    title: 'Tedd Schreiner | DevOps Engineer for AWS Cloud, Automation & AI-assisted Software Engineering',
+    title: 'Sudar Blogger | Personal Blog',
     description:
       'Tedd Schreiner is a DevOps Engineer focused on AWS Cloud, CI/CD, Kubernetes, infrastructure automation, network automation, ITSM workflows and AI-assisted software engineering.',
     jobTitle: 'DevOps Engineer for AWS Cloud, Automation and AI-assisted Software Engineering',
