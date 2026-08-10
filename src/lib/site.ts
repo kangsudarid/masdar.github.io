@@ -24,13 +24,13 @@ const localizedSite = {
     title: 'Sudar Blogger | Personal Blog',
     description:
       'Tempat Share Pengalaman di Dunia Blogger dan  Share Tempat Menarik Lainnya',
-    jobTitle: 'DevOps Engineer für AWS Cloud, Automation und AI-assisted Software Engineering',
+    jobTitle: 'Menjadi Blogger Adalah Jalan Ninjaku',
   },
   en: {
     title: 'Sudar Blogger | Personal Blog',
     description:
-      'Tedd Schreiner is a DevOps Engineer focused on AWS Cloud, CI/CD, Kubernetes, infrastructure automation, network automation, ITSM workflows and AI-assisted software engineering.',
-    jobTitle: 'DevOps Engineer for AWS Cloud, Automation and AI-assisted Software Engineering',
+      'A place to share experiences in the world of blogging and share other interesting places.',
+    jobTitle: 'Becoming a Blogger Is My Ninja Way',
   },
 } as const satisfies Record<Locale, { title: string; description: string; jobTitle: string }>;
 
