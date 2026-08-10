@@ -7,7 +7,7 @@ export interface ContactEnv {
   RESEND_API_KEY?: string;
 }
 
-const defaultRecipient = 'info@teddschreiner.de';
+const defaultRecipient = 'admin@sudarblogger.com';
 
 function getContactCopy(locale: Locale) {
   return locale === 'de'
