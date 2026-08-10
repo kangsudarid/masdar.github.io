@@ -13,14 +13,14 @@ import { site, skillClusters, suitableInquiryAreas } from '@lib/site';
 import { getCollection } from 'astro:content';
 
 const projects = (await getCollection('projects'))
-  .filter((project) => project.data.locale === 'de' && project.data.featured)
-  .sort(byProjectTitleForLocale('de'));
+  .filter((project) => project.data.locale === 'id' && project.data.featured)
+  .sort(byProjectTitleForLocale('id'));
 const posts = (await getCollection('blog'))
-  .filter((post) => post.data.locale === 'de' && !post.data.draft)
+  .filter((post) => post.data.locale === 'id' && !post.data.draft)
   .sort(byPubDateDesc)
   .slice(0, 3);
 const experience = (await getCollection('experience'))
-  .filter((item) => item.data.locale === 'de')
+  .filter((item) => item.data.locale === 'id')
   .sort(byExperienceDateDesc)
   .slice(0, 2);
 ---
@@ -70,7 +70,7 @@ const experience = (await getCollection('experience'))
             Berikut ini adalah Projek Webdev yang bisa kalian lihat di bawah ini, dan apabila ingin kerjasama bisa langsung hubungi kontak di bawah ya!.
           </p>
         </div>
-        <a class="button-secondary self-start md:self-auto" href="/projects/">Alle Projekte</a>
+        <a class="button-secondary self-start md:self-auto" href="/projects/">Lihat Projek</a>
       </div>
 
       <div class="mt-10 grid gap-5 lg:grid-cols-3">
