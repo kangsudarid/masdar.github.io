@@ -27,7 +27,7 @@ const props = Astro.props as Props;
 const locale = props.locale ?? getLocaleFromPath(Astro.url.pathname);
 const site = getSite(locale);
 const currentPath = Astro.url.pathname;
-const dePath = switchLocalePath(currentPath, 'de');
+const dePath = switchLocalePath(currentPath, 'id');
 const enPath = switchLocalePath(currentPath, 'en');
 const deUrl = new URL(dePath, site.url).toString();
 const enUrl = new URL(enPath, site.url).toString();
@@ -39,7 +39,7 @@ const personJsonLd = {
   '@type': 'Person',
   name: site.name,
   url: site.url,
-  jobTitle: 'DevOps Engineer für Cloud Automation und AI-assisted Software Engineering',
+  jobTitle: 'Menjadi Blogger Adalah Jalan Ninjaku',
   image: imageUrl(defaultSeoImage),
   sameAs: [site.social.github, site.social.linkedin, site.social.xing].filter(Boolean),
 };
@@ -73,8 +73,8 @@ const propsJsonLd = props.jsonLd
         const browserLanguage = (window.navigator.languages?.[0] || window.navigator.language || '').toLowerCase();
         const preferredLocale = storedLocale === 'de' || storedLocale === 'en'
           ? storedLocale
-          : browserLanguage.startsWith('de')
-            ? 'de'
+          : browserLanguage.startsWith('id')
+            ? 'id'
             : 'en';
 
         if (!storedLocale && preferredLocale !== locale && alternatePath) {
@@ -130,7 +130,7 @@ const propsJsonLd = props.jsonLd
           const switcher = link.closest<HTMLElement>('[data-locale-switcher]');
           const thumb = switcher?.querySelector<HTMLElement>('[data-locale-thumb]');
 
-          if (!storageKey || (targetLocale !== 'de' && targetLocale !== 'en')) {
+          if (!storageKey || (targetLocale !== 'id' && targetLocale !== 'en')) {
             return;
           }
 
