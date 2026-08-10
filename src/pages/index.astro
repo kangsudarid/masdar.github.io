@@ -13,14 +13,14 @@ import { site, skillClusters, suitableInquiryAreas } from '@lib/site';
 import { getCollection } from 'astro:content';
 
 const projects = (await getCollection('projects'))
-  .filter((project) => project.data.locale === 'id' && project.data.featured)
-  .sort(byProjectTitleForLocale('id'));
+  .filter((project) => project.data.locale === 'de' && project.data.featured)
+  .sort(byProjectTitleForLocale('de'));
 const posts = (await getCollection('blog'))
-  .filter((post) => post.data.locale === 'id' && !post.data.draft)
+  .filter((post) => post.data.locale === 'de' && !post.data.draft)
   .sort(byPubDateDesc)
   .slice(0, 3);
 const experience = (await getCollection('experience'))
-  .filter((item) => item.data.locale === 'id')
+  .filter((item) => item.data.locale === 'de')
   .sort(byExperienceDateDesc)
   .slice(0, 2);
 ---
