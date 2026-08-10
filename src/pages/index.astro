@@ -67,11 +67,10 @@ const experience = (await getCollection('experience'))
     <Container>
       <div class="flex flex-col justify-between gap-6 md:flex-row md:items-end">
         <div>
-          <p class="eyebrow">Case Studies</p>
-          <h2 class="section-title">Ausgewählte Projektbeispiele aus Infrastruktur, Automatisierung und Netzwerkbetrieb.</h2>
+          <p class="eyebrow">Project Saya</p>
+          <h2 class="section-title">Beberapa Projek Web Yang saya Lakukan.</h2>
           <p class="section-copy">
-            Die Projektseiten sind bewusst anonymisiert. Sie zeigen Problem, Lösung, Technologien, Ergebnis und Lernpunkte,
-            ohne vertrauliche Betriebsdetails offenzulegen.
+            Berikut ini adalah Projek Webdev yang bisa kalian lihat di bawah ini, dan apabila ingin kerjasama bisa langsung hubungi kontak di bawah ya!.
           </p>
         </div>
         <a class="button-secondary self-start md:self-auto" href="/projects/">Alle Projekte</a>
@@ -85,19 +84,19 @@ const experience = (await getCollection('experience'))
 
   <section class="section section-tight-y">
     <Container>
-      <p class="eyebrow">Career Snapshot</p>
-      <h2 class="section-title">Der rote Faden: Systeme verstehen, ordnen und automatisieren.</h2>
+      <p class="eyebrow">Pengalaman Kerja</p>
+      <h2 class="section-title">Pengalaman Kerja di Beberapa Perusahaan.</h2>
       <p class="section-copy">
-        Der vollständige Lebenslauf bleibt verfügbar, aber auf der Startseite zählt vor allem der Zusammenhang:
-        Entwicklung, Infrastruktur, Automatisierung und Betrieb wachsen hier zu einem klaren technischen Profil zusammen.
+        Berikut Ini adalah Pengalaman Kerja Yang Pernah saya lakukan hingga saat ini:
+      
       </p>
 
-      <ol class="timeline-list mt-10 max-w-4xl" aria-label="Berufserfahrung im Überblick">
+      <ol class="timeline-list mt-10 max-w-4xl" aria-label="Pengalaman Kerja">
         {experience.map((item) => <li><TimelineItem item={item} /></li>)}
       </ol>
 
       <div class="mt-5 pl-8 sm:pl-10">
-        <a class="button-secondary" href="/cv/">Vollständigen CV öffnen</a>
+        <a class="button-secondary" href="/cv/">Lihat CV Offline</a>
       </div>
     </Container>
   </section>
@@ -114,10 +113,9 @@ const experience = (await getCollection('experience'))
         <div class="flex flex-col justify-between gap-6 md:flex-row md:items-end">
           <div>
             <p class="eyebrow">Blog</p>
-            <h2 class="section-title">Notizen zu DevOps, Netzwerkdaten und technischen Projekten.</h2>
+            <h2 class="section-title">Note Sudar Blogger.</h2>
             <p class="section-copy">
-              Der Blog ist für Praxisnotizen gedacht: Entscheidungen, Learnings, kleine Experimente und technische
-              Zusammenhänge, die nicht in eine klassische Projektseite passen.
+              Berbagi Pengalaman Ngeblog dan Esai yang di tulis di blog ini, Supaya bisa menjadi inspirasi semua yang membaca nya. 
             </p>
           </div>
           <a class="button-secondary self-start md:self-auto" href="/blog/">Zum Blog</a>
