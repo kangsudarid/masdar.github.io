@@ -7,12 +7,12 @@ const locale = getLocaleFromPath(Astro.url.pathname);
 const copy = locale === 'de'
   ? {
       eyebrow: '404',
-      title: 'Seite nicht gefunden',
+      title: 'Artikel tidak ada',
       description:
-        'Die angefragte Seite existiert nicht oder wurde verschoben. Von hier geht es zur Startseite, zu den Projekten oder direkt zum Kontakt.',
-      home: 'Zur Startseite',
-      projects: 'Projekte ansehen',
-      contact: 'Kontakt aufnehmen',
+        'Apabila Halaman Yang dicari Tidak Ada Bisa Langsung Hubungi Kontak Kami.',
+      home: 'Ke Beranda',
+      projects: 'Lihat Projek',
+      contact: 'Kontak Kami',
     }
   : {
       eyebrow: '404',
