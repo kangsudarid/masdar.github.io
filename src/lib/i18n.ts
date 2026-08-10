@@ -8,7 +8,7 @@ export const localeMeta: Record<Locale, { lang: string; ogLocale: string; label:
   de: {
     lang: 'id',
     ogLocale: 'id_ID',
-    label: 'DE',
+    label: 'ID',
     languageName: 'Indonesia',
   },
   en: {
