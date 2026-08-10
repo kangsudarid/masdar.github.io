@@ -1,21 +1,22 @@
 {
-  "name": "Tedd Schreiner",
-  "domain": "teddschreiner.de",
+  "name": "Sudar Blogger",
+  "domain": "sudarblogger.com",
   "email": "info@teddschreiner.de",
   "hero": {
-    "title": "Tedd Schreiner",
-    "headline": "DevOps Engineer für AWS Cloud, Automatisierung und AI-assisted Software Engineering.",
-    "subheadline": "Ich entwickle und betreibe Cloud-Infrastruktur, CI/CD-Workflows und Automatisierungen für Software-Deployments, ITSM-Prozesse und Netzwerkbetrieb."
+    "title": "Sudar Blogger",
+    "headline": "Menjadi Blogger Adalah Jalan Ninjaku.",
+    "subheadline": "Tempat Share Pengalaman, Tutorial, Esai dan Tempat Exsperimen di Dunia Blogger."
   },
   "socialPreview": {
-    "claim": ["DevOps", "AWS Cloud", "Automation"],
+    "claim": ["Traveller", "Blogger", "Penulis"],
     "headline": "DevOps Engineer f\u00fcr AWS Cloud, Automation & AI Software Engineering"
   },
   "navigation": [
-    { "label": "Projekte", "href": "/projects/" },
-    { "label": "Über mich", "href": "/about/" },
+    { "label": "Unplug", "href": "/projects/" },
+    { "label": "About", "href": "/about/" },
+    { "label": "Blog", "href": "/Blog/" }, 
     { "label": "CV", "href": "/cv/" },
-    { "label": "Kontakt", "href": "/contact/" }
+    { "label": "Kontak", "href": "/contact/" }
   ],
   "social": {
     "github": "https://github.com/tschreiner",
