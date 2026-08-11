@@ -6,14 +6,14 @@ import { site } from '@lib/site';
 
 <PageLayout
   eyebrow="Legal"
-  title="Impressum"
-  description="Angaben gemäß § 5 DDG und Kontaktinformationen."
+  title="Kebijakan Privasi"
+  description="Informasi mengenai pengolahan data pribadi pada situs web statis ini."
   noindex={true}
 >
   <section class="section section-after-header">
     <Container>
       <div class="surface-card prose-site">
-        <h2>Angaben gemäß § 5 DDG</h2>
+        <h2>Informasi sesuai dengan § 5 DDG</h2>
         <p>
           {site.name}<br />
           {site.address.street}<br />
@@ -24,9 +24,9 @@ import { site } from '@lib/site';
         <h2>Kontakt</h2>
         <p>E-Mail: <a href={`mailto:${site.email}`}>{site.email}</a></p>
 
-        <h2>Verantwortlich für den Inhalt</h2>
+        <h2>Bertanggung jawab atas konten</h2>
         <p>
-          Verantwortlich für journalistisch-redaktionelle Inhalte im Sinne von § 18 Abs. 2 MStV:
+          Bertanggung jawab atas isi jurnalistik dan editorial sebagaimana dimaksud dalam § 18 ayat 2 MStV:
         </p>
         <p>
           {site.name}<br />
@@ -34,31 +34,27 @@ import { site } from '@lib/site';
           {site.address.postalCode} {site.address.city}
         </p>
 
-        <h2>Verbraucherstreitbeilegung</h2>
+        <h2>Penyelesaian Perselisihan Konsumen</h2>
         <p>
-          Ich bin nicht verpflichtet und nicht bereit, an Streitbeilegungsverfahren vor einer
-          Verbraucherschlichtungsstelle teilzunehmen.
+          Saya tidak berkewajiban maupun bersedia untuk berpartisipasi dalam proses penyelesaian sengketa di hadapan dewan arbitrase konsumen.
         </p>
 
-        <h2>Haftung für Inhalte</h2>
+        <h2>Tanggung Jawab Atas Konten</h2>
         <p>
-          Die Inhalte dieser Website wurden mit Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität
-          der Inhalte kann ich jedoch keine Gewähr übernehmen. Gesetzliche Verpflichtungen zur Entfernung oder Sperrung
-          der Nutzung von Informationen bleiben unberührt.
+          Konten situs web ini telah dibuat dengan cermat. Namun, saya tidak dapat menjamin keakuratan, kelengkapan, atau ketepatan waktu konten tersebut.
+          Kewajiban hukum untuk menghapus atau memblokir penggunaan informasi tetap berlaku.
         </p>
 
-        <h2>Haftung für Links</h2>
+        <h2>Tanggung Jawab Atas Tautan</h2>
         <p>
-          Diese Website enthält Links zu externen Websites Dritter, auf deren Inhalte ich keinen Einfluss habe. Für diese
-          fremden Inhalte ist stets der jeweilige Anbieter oder Betreiber der verlinkten Seiten verantwortlich. Bei
-          Bekanntwerden von Rechtsverletzungen entferne ich entsprechende Links.
+          Situs web ini berisi tautan ke situs web eksternal pihak ketiga, yang kontennya berada di luar kendali saya. Penyedia atau operator masing-masing halaman yang ditautkan selalu bertanggung jawab atas konten eksternal tersebut.
+          Setelah mengetahui adanya pelanggaran hukum, saya akan menghapus tautan yang bersangkutan.
         </p>
 
-        <h2>Urheberrecht</h2>
+        <h2>Hak Cipta</h2>
         <p>
-          Die auf dieser Website erstellten Inhalte und Werke unterliegen dem deutschen Urheberrecht. Beiträge Dritter
-          werden als solche gekennzeichnet. Jede Verwertung außerhalb der Grenzen des Urheberrechts bedarf der vorherigen
-          Zustimmung des jeweiligen Rechteinhabers.
+          Konten dan karya yang dibuat di situs web ini tunduk pada hukum hak cipta Jerman. Kontribusi dari pihak ketiga ditandai sebagai demikian.
+          Setiap penggunaan di luar batas hukum hak cipta memerlukan persetujuan terlebih dahulu dari pemegang hak cipta yang bersangkutan.
         </p>
       </div>
     </Container>
