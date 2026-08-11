@@ -4,7 +4,7 @@ import PageLayout from '@layouts/PageLayout.astro';
 import { getLocaleFromPath, withLocalePath } from '@lib/i18n';
 
 const locale = getLocaleFromPath(Astro.url.pathname);
-const copy = locale === 'de'
+const copy = locale === 'id'
   ? {
       eyebrow: '404',
       title: 'Artikel tidak ada',
