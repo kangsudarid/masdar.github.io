@@ -7,7 +7,7 @@ import { getNavigation, getSite } from '@lib/site';
 const locale = getLocaleFromPath(Astro.url.pathname);
 const navigation = getNavigation(locale);
 const site = getSite(locale);
-const copy = locale === 'de'
+const copy = locale === 'id'
   ? {
       intro:
         'Situs ini berisi informasi tentang saya, tulisan, opini dan dokumentasi untuk saya pribadi ketika sedang belajar atau membagikan sesuatu. Untuk mendapatkan informasi yang sifatnya cepat.',
