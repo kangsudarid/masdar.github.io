@@ -7,16 +7,16 @@ import { getNavigation, getSite } from '@lib/site';
 const locale = getLocaleFromPath(Astro.url.pathname);
 const navigation = getNavigation(locale);
 const site = getSite(locale);
-const copy = locale === 'id'
+const copy = locale === 'de'
   ? {
       intro:
         'Situs ini berisi informasi tentang saya, tulisan, opini dan dokumentasi untuk saya pribadi ketika sedang belajar atau membagikan sesuatu. Untuk mendapatkan informasi yang sifatnya cepat.',
       nav: 'Navigation',
-      legal: 'Kontakt & Legal',
+      legal: 'Kontak & Legal',
       imprint: 'Legal Notice',
-      privacy: 'Privacy Police',
+      privacy: 'Policy Privacy',
       footer:
-        'Web yang dibuat di Cloudflare and Github.',
+        'Statically built, with consent-based analytics and without external webfonts.',
     }
   : {
       intro:
@@ -26,7 +26,7 @@ const copy = locale === 'id'
       imprint: 'Legal Notice',
       privacy: 'Privacy Policy',
       footer:
-        'Copyright All receved. Bluid Astro and Hosting Cloudflare',
+        'Statically built, with consent-based analytics and without external webfonts.',
     };
 ---
 
@@ -73,9 +73,7 @@ const copy = locale === 'id'
             GitHub
           </a>
         </li>
-        <li><a class="footer-link" href={withLocalePath(locale, '/impressum/')}>{copy.imprint}</a></li>
-        <li><a class="footer-link" href={withLocalePath(locale, '/datenschutz/')}>{copy.privacy}</a></li>
-      </ul>
+        </ul>
     </nav>
   </Container>
 
